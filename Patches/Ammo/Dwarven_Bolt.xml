@@ -6,11 +6,12 @@
 		<operations>
 		<!--Continue if combat extended does exist-->
 			<li Class="ModCheck.isModLoaded">
-				<modName>Lord of the Rims - The Third Age</modName>
+				<modName>Lord of the Rims - Unlimited</modName>
 				<yourMod>Lord of the Rims CE Patch</yourMod>
+				<success>Invert</success>
 			</li>
 			
-			<li Class="PatchOperationRemove">
+			<li Class="PatchOperationAdd">
 				<xpath>Defs/RecipeDef[defName="MakeAmmo_LotRD_Bolt"]/recipeUsers</xpath>
 				<value>
 					<li>ElectricSmithy</li>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+		<!--Continue if combat extended does exist-->
+			<li Class="ModCheck.isModLoaded">
+				<modName>Lord of the Rims - The Third Age</modName>
+				<yourMod>Lord of the Rims CE Patch</yourMod>
+			</li>
+			
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/RecipeDef[defName="MakeAmmo_LotRE_Arrow_Mirkwood"]/recipeUsers</xpath>
+				<value>
+					<li>ElectricSmithy</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

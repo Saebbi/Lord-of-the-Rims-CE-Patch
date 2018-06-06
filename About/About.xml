@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Lord of the Rims CE Patch</name>
+	<author>Saebbi</author>
+	<url></url>
+	<targetVersion>0.18.1722</targetVersion>
+	<description>Patches the Lord of the Rims mods to work with Combat Extended. Automatically detects installed modules and makes them compatible.</description>
+</ModMetaData>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+		<!--Continue if combat extended does exist-->
+			<li Class="ModCheck.isModLoaded">
+				<modName>Lord of the Rims - Men and Beasts</modName>
+				<yourMod>Lord of the Rims CE Patch</yourMod>
+			</li>
+			
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/ThingDef[defName="LotR_FellBeast"]</xpath>
+				<value>
+					<li Class="CombatExtended.RacePropertiesExtensionCE">
+						<bodyShape>Birdlike</bodyShape>
+					</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="LotR_FellBeast"]/tools</xpath>
+				<value>
+					<tools>
+					  <li Class="CombatExtended.ToolCE">
+						<capacities>
+						  <li>Bite</li>
+						</capacities>
+						<power>20</power>
+						<cooldownTime>2.0</cooldownTime>
+						<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+						<armorPenetration>0.36</armorPenetration>
+					  </li>
+					  <li Class="CombatExtended.ToolCE">
+						<label>left foot</label>
+						<capacities>
+						  <li>Blunt</li>
+						</capacities>
+						<power>14</power>
+						<cooldownTime>1.65</cooldownTime>
+						<linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+						<armorPenetration>0.22</armorPenetration>
+					  </li>
+					  <li Class="CombatExtended.ToolCE">
+						<label>right foot</label>
+						<capacities>
+						  <li>Blunt</li>
+						</capacities>
+						<power>14</power>
+						<cooldownTime>1.65</cooldownTime>
+						<linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+						<armorPenetration>0.22</armorPenetration>
+					  </li>
+					  <li Class="CombatExtended.ToolCE">
+						<label>head</label>
+						<capacities>
+						  <li>Blunt</li>
+						</capacities>
+						<power>11</power>
+						<cooldownTime>1.65</cooldownTime>
+						<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+						<armorPenetration>0.16</armorPenetration>
+						<commonality>0.2</commonality>
+					  </li>
+					</tools>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/ThingDef[defName="LotR_Wight"]</xpath>
+				<value>
+					<li Class="CombatExtended.RacePropertiesExtensionCE">
+						<bodyShape>Humanoid</bodyShape>
+					</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="LotR_Wight"]/tools</xpath>
+				<value>
+					<tools>
+					  <li Class="CombatExtended.ToolCE">
+						<label>mace</label>
+						<capacities>
+						  <li>Blunt</li>
+						</capacities>
+						<power>14</power>
+						<cooldownTime>1.65</cooldownTime>
+						<linkedBodyPartsGroup>Arms</linkedBodyPartsGroup>
+						<armorPenetration>0.14</armorPenetration>
+					  </li>
+					</tools>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

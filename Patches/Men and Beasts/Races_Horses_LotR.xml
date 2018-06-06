@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+		<!--Continue if combat extended does exist-->
+			<li Class="ModCheck.isModLoaded">
+				<modName>Lord of the Rims - Men and Beasts</modName>
+				<yourMod>Lord of the Rims CE Patch</yourMod>
+			</li>
+			
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/ThingDef[defName="LotR_ScoutHorse"]</xpath>
+				<value>
+					<li Class="CombatExtended.RacePropertiesExtensionCE">
+						<bodyShape>Quadruped</bodyShape>
+					</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="LotR_ScoutHorse"]/tools</xpath>
+				<value>
+					<tools>
+					  <li Class="CombatExtended.ToolCE">
+						<label>left hoof</label>
+						<capacities>
+						  <li>Blunt</li>
+						  <li>Poke</li>
+						</capacities>
+						<power>7</power>
+						<cooldownTime>1.65</cooldownTime>
+						<linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+						<armorPenetration>0.14</armorPenetration>
+					  </li>
+					  <li Class="CombatExtended.ToolCE">
+						<label>right hoof</label>
+						<capacities>
+						  <li>Blunt</li>
+						  <li>Poke</li>
+						</capacities>
+						<power>7</power>
+						<cooldownTime>1.65</cooldownTime>
+						<linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+						<armorPenetration>0.14</armorPenetration>
+					  </li>
+					  <li Class="CombatExtended.ToolCE">
+						<capacities>
+						  <li>Bite</li>
+						</capacities>
+						<power>4</power>
+						<cooldownTime>1.65</cooldownTime>
+						<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+						<armorPenetration>0.16</armorPenetration>
+					  </li>
+					  <li Class="CombatExtended.ToolCE">
+						<label>head</label>
+						<capacities>
+						  <li>Blunt</li>
+						</capacities>
+						<power>3</power>
+						<cooldownTime>1.65</cooldownTime>
+						<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+						<armorPenetration>0.1</armorPenetration>
+						<commonality>0.2</commonality>
+					  </li>
+					</tools>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/ThingDef[defName="LotR_TraderHorse"]</xpath>
+				<value>
+					<li Class="CombatExtended.RacePropertiesExtensionCE">
+						<bodyShape>Quadruped</bodyShape>
+					</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="LotR_TraderHorse"]/tools</xpath>
+				<value>
+					<tools>
+					  <li Class="CombatExtended.ToolCE">
+						<label>left hoof</label>
+						<capacities>
+						  <li>Blunt</li>
+						  <li>Poke</li>
+						</capacities>
+						<power>4</power>
+						<cooldownTime>1.65</cooldownTime>
+						<linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+						<armorPenetration>0.12</armorPenetration>
+					  </li>
+					  <li Class="CombatExtended.ToolCE">
+						<label>right hoof</label>
+						<capacities>
+						  <li>Blunt</li>
+						  <li>Poke</li>
+						</capacities>
+						<power>4</power>
+						<cooldownTime>1.65</cooldownTime>
+						<linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+						<armorPenetration>0.12</armorPenetration>
+					  </li>
+					  <li Class="CombatExtended.ToolCE">
+						<capacities>
+						  <li>Bite</li>
+						</capacities>
+						<power>3</power>
+						<cooldownTime>1.65</cooldownTime>
+						<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+						<armorPenetration>0.14</armorPenetration>
+					  </li>
+					  <li Class="CombatExtended.ToolCE">
+						<label>head</label>
+						<capacities>
+						  <li>Blunt</li>
+						</capacities>
+						<power>1</power>
+						<cooldownTime>1.65</cooldownTime>
+						<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+						<armorPenetration>0.1</armorPenetration>
+						<commonality>0.2</commonality>
+					  </li>
+					</tools>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/ThingDef[defName="LotR_BattleHorse"]</xpath>
+				<value>
+					<li Class="CombatExtended.RacePropertiesExtensionCE">
+						<bodyShape>Quadruped</bodyShape>
+					</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="LotR_BattleHorse"]/tools</xpath>
+				<value>
+					<tools>
+					  <li Class="CombatExtended.ToolCE">
+						<label>left hoof</label>
+						<capacities>
+						  <li>Blunt</li>
+						  <li>Poke</li>
+						</capacities>
+						<power>8</power>
+						<cooldownTime>1.65</cooldownTime>
+						<linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+						<armorPenetration>0.18</armorPenetration>
+					  </li>
+					  <li Class="CombatExtended.ToolCE">
+						<label>right hoof</label>
+						<capacities>
+						  <li>Blunt</li>
+						  <li>Poke</li>
+						</capacities>
+						<power>8</power>
+						<cooldownTime>1.65</cooldownTime>
+						<linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+						<armorPenetration>0.18</armorPenetration>
+					  </li>
+					  <li Class="CombatExtended.ToolCE">
+						<capacities>
+						  <li>Bite</li>
+						</capacities>
+						<power>5</power>
+						<cooldownTime>1.65</cooldownTime>
+						<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+						<armorPenetration>0.2</armorPenetration>
+					  </li>
+					  <li Class="CombatExtended.ToolCE">
+						<label>head</label>
+						<capacities>
+						  <li>Blunt</li>
+						</capacities>
+						<power>3</power>
+						<cooldownTime>1.65</cooldownTime>
+						<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+						<armorPenetration>0.1</armorPenetration>
+						<commonality>0.2</commonality>
+					  </li>
+					</tools>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/ThingDef[defName="LotR_Mearas"]</xpath>
+				<value>
+					<li Class="CombatExtended.RacePropertiesExtensionCE">
+						<bodyShape>Quadruped</bodyShape>
+					</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="LotR_Mearas"]/tools</xpath>
+				<value>
+					<tools>
+					  <li Class="CombatExtended.ToolCE">
+						<label>left hoof</label>
+						<capacities>
+						  <li>Blunt</li>
+						  <li>Poke</li>
+						</capacities>
+						<power>10</power>
+						<cooldownTime>1.65</cooldownTime>
+						<linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+						<armorPenetration>0.22</armorPenetration>
+					  </li>
+					  <li Class="CombatExtended.ToolCE">
+						<label>right hoof</label>
+						<capacities>
+						  <li>Blunt</li>
+						  <li>Poke</li>
+						</capacities>
+						<power>10</power>
+						<cooldownTime>1.65</cooldownTime>
+						<linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+						<armorPenetration>0.22</armorPenetration>
+					  </li>
+					  <li Class="CombatExtended.ToolCE">
+						<capacities>
+						  <li>Bite</li>
+						</capacities>
+						<power>8</power>
+						<cooldownTime>1.65</cooldownTime>
+						<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+						<armorPenetration>0.22</armorPenetration>
+					  </li>
+					  <li Class="CombatExtended.ToolCE">
+						<label>head</label>
+						<capacities>
+						  <li>Blunt</li>
+						</capacities>
+						<power>17</power>
+						<cooldownTime>1.65</cooldownTime>
+						<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+						<armorPenetration>0.1</armorPenetration>
+						<commonality>0.2</commonality>
+					  </li>
+					</tools>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

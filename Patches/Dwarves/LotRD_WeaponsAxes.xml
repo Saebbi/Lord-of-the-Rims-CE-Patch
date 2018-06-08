@@ -5,6 +5,11 @@
 		<success>Always</success>
 		<operations>
 		<!--Continue if combat extended does exist-->
+			<li Class="ModCheck.FindFile">
+				<modName>Lord of the Rims - Dwarves</modName>
+				<file>LotRD_WeaponsAxes.xml</file>
+			</li>
+		
 			<li Class="ModCheck.isModLoaded">
 				<modName>Lord of the Rims - Dwarves</modName>
 				<yourMod>Lord of the Rims CE Patch</yourMod>
@@ -26,7 +31,7 @@
 					  <li Class="CombatExtended.ToolCE">
 						<label>tip</label>
 						<capacities>
-						  <li>Cut</li>
+						  <li>Stab</li>
 						</capacities>
 						<power>12</power>
 						<cooldownTime>1.95</cooldownTime>
@@ -35,7 +40,7 @@
 					  <li Class="CombatExtended.ToolCE">
 						<label>edge</label>
 						<capacities>
-						  <li>Cut</li>
+						  <li>Stab</li>
 						</capacities>
 						<power>27</power>
 						<cooldownTime>2.5</cooldownTime>
@@ -70,7 +75,7 @@
 					  <li Class="CombatExtended.ToolCE">
 						<label>edge</label>
 						<capacities>
-						  <li>Cut</li>
+						  <li>Stab</li>
 						</capacities>
 						<power>32</power>
 						<cooldownTime>2.5</cooldownTime>
@@ -105,7 +110,7 @@
 					  <li Class="CombatExtended.ToolCE">
 						<label>edge</label>
 						<capacities>
-						  <li>Cut</li>
+						  <li>Stab</li>
 						</capacities>
 						<power>38</power>
 						<cooldownTime>3.0</cooldownTime>

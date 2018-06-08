@@ -5,6 +5,11 @@
 		<success>Always</success>
 		<operations>
 		<!--Continue if combat extended does exist-->
+			<li Class="ModCheck.FindFile">
+				<modName>Lord of the Rims - Men and Beasts</modName>
+				<file>Races_Horses_LotR.xml</file>
+			</li>
+		
 			<li Class="ModCheck.isModLoaded">
 				<modName>Lord of the Rims - Men and Beasts</modName>
 				<yourMod>Lord of the Rims CE Patch</yourMod>

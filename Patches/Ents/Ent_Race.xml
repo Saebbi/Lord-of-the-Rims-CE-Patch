@@ -7,7 +7,7 @@
 		<!--Continue if combat extended does exist-->
 			<li Class="ModCheck.FindFile">
 				<modName>Lord of the Rims - Ents</modName>
-				<file>Ent_Race.xml</file>
+				<file>Race_Ents.xml</file>
 			</li>
 		
 			<li Class="ModCheck.isModLoaded">

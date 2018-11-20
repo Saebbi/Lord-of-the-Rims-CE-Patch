@@ -20,7 +20,7 @@
 	
 	<!-- ==================== Ammo ========================== -->
 
-  <ThingDef Name="AmmoLotRD_ArrowBase" ParentName="NeolithicAmmoBase" Abstract="True">
+  <ThingDef Class="CombatExtended.AmmoDef" Name="AmmoLotRD_ArrowBase" ParentName="NeolithicAmmoBase" Abstract="True">
     <description>Heavy arrow designed to be fired from a great bow.</description>
     <statBases>
       <Mass>0.17</Mass>
@@ -36,7 +36,7 @@
     </tradeTags>
   </ThingDef>
 
-  <ThingDef ParentName="AmmoLotRD_ArrowBase">
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="AmmoLotRD_ArrowBase">
     <defName>Ammo_LotRD_Arrow</defName>
     <label>dwarven arrow</label>
     <graphicData>
@@ -51,7 +51,7 @@
 	
 	<!-- ================== Projectiles ================== -->
 
-	<ThingDef Name="BaseLotRD_ArrowProjectile" ParentName="BaseBullet" Abstract="true">
+	<ThingDef Class="CombatExtended.AmmoDef" Name="BaseLotRD_ArrowProjectile" ParentName="BaseBullet" Abstract="true">
 		<graphicData>
 			<texPath>Things/Projectile/Arrow_Small</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -62,12 +62,12 @@
 		</projectile>
 	</ThingDef>
 
-	<ThingDef ParentName="BaseLotRD_ArrowProjectile">
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseLotRD_ArrowProjectile">
 		<defName>Projectile_LotRD_Arrow</defName>
 		<label>dwarven arrow</label>
-		<projectile>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<damageAmountBase>23</damageAmountBase>
-			<armorPenetration>0.275</armorPenetration>
+			<armorPenetrationBase>0.275</armorPenetrationBase>
 			<preExplosionSpawnChance>0.6</preExplosionSpawnChance>	<!-- 25 arrows per resource -->
 			<preExplosionSpawnThingDef>Ammo_LotRD_Arrow</preExplosionSpawnThingDef>
 		</projectile>

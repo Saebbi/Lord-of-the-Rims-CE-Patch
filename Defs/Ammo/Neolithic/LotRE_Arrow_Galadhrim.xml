@@ -20,7 +20,7 @@
 	
 	<!-- ==================== Ammo ========================== -->
 
-  <ThingDef Name="AmmoLotRE_Arrow_GaladhrimBase" ParentName="NeolithicAmmoBase" Abstract="True">
+  <ThingDef Class="CombatExtended.AmmoDef" Name="AmmoLotRE_Arrow_GaladhrimBase" ParentName="NeolithicAmmoBase" Abstract="True">
     <description>Elven arrow (Galadhrim).</description>
     <statBases>
       <Mass>0.17</Mass>
@@ -37,7 +37,7 @@
     </tradeTags>
   </ThingDef>
 
-  <ThingDef ParentName="AmmoLotRE_Arrow_GaladhrimBase">
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="AmmoLotRE_Arrow_GaladhrimBase">
     <defName>Ammo_LotRE_Arrow_Galadhrim</defName>
     <label>elven arrow (Galadhrim)</label>
     <graphicData>
@@ -52,23 +52,23 @@
 	
 	<!-- ================== Projectiles ================== -->
 
-	<ThingDef Name="BaseLotRE_Arrow_GaladhrimProjectile" ParentName="BaseBullet" Abstract="true">
+	<ThingDef Class="CombatExtended.AmmoDef" Name="BaseLotRE_Arrow_GaladhrimProjectile" ParentName="BaseBullet" Abstract="true">
 		<graphicData>
 			<texPath>Things/Projectile/Arrow_Small</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<projectile>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<damageDef>ArrowHighVelocity</damageDef>
 			<speed>58</speed>
 		</projectile>
 	</ThingDef>
 
-	<ThingDef ParentName="BaseLotRE_Arrow_GaladhrimProjectile">
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseLotRE_Arrow_GaladhrimProjectile">
 		<defName>Projectile_LotRE_Arrow_Galadhrim</defName>
 		<label>elven arrow (G)</label>
-		<projectile>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<damageAmountBase>26</damageAmountBase>
-			<armorPenetration>0.36</armorPenetration>
+			<armorPenetrationBase>0.36</armorPenetrationBase>
 			<preExplosionSpawnChance>0.6</preExplosionSpawnChance>	<!-- 25 arrows per resource -->
 			<preExplosionSpawnThingDef>Ammo_LotRE_Arrow_Galadhrim</preExplosionSpawnThingDef>
 		</projectile>

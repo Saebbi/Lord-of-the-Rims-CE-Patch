@@ -20,7 +20,7 @@
 	
 	<!-- ==================== Ammo ========================== -->
 
-  <ThingDef Name="AmmoLotRE_Arrow_RivendellBase" ParentName="NeolithicAmmoBase" Abstract="True">
+  <ThingDef Class="CombatExtended.AmmoDef" Name="AmmoLotRE_Arrow_RivendellBase" ParentName="NeolithicAmmoBase" Abstract="True">
     <description>Elven arrow (Rivendell).</description>
     <statBases>
       <Mass>0.17</Mass>
@@ -37,7 +37,7 @@
     </tradeTags>
   </ThingDef>
 
-  <ThingDef ParentName="AmmoLotRE_Arrow_RivendellBase">
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="AmmoLotRE_Arrow_RivendellBase">
     <defName>Ammo_LotRE_Arrow_Rivendell</defName>
     <label>elven arrow (Rivendell)</label>
     <graphicData>
@@ -52,23 +52,23 @@
 	
 	<!-- ================== Projectiles ================== -->
 
-	<ThingDef Name="BaseLotRE_Arrow_RivendellProjectile" ParentName="BaseBullet" Abstract="true">
+	<ThingDef Class="CombatExtended.AmmoDef" Name="BaseLotRE_Arrow_RivendellProjectile" ParentName="BaseBullet" Abstract="true">
 		<graphicData>
 			<texPath>Things/Projectile/Arrow_Small</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<projectile>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<damageDef>ArrowHighVelocity</damageDef>
 			<speed>55</speed>
 		</projectile>
 	</ThingDef>
 
-	<ThingDef ParentName="BaseLotRE_Arrow_RivendellProjectile">
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseLotRE_Arrow_RivendellProjectile">
 		<defName>Projectile_LotRE_Arrow_Rivendell</defName>
 		<label>elven arrow (R)</label>
-		<projectile>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<damageAmountBase>28</damageAmountBase>
-			<armorPenetration>0.42</armorPenetration>
+			<armorPenetrationBase>0.42</armorPenetrationBase>
 			<preExplosionSpawnChance>0.6</preExplosionSpawnChance>	<!-- 25 arrows per resource -->
 			<preExplosionSpawnThingDef>Ammo_LotRE_Arrow_Rivendell</preExplosionSpawnThingDef>
 		</projectile>

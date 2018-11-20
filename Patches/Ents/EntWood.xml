@@ -4,11 +4,7 @@
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
 		<operations>
-		<!--Continue if combat extended does exist-->
-			<li Class="ModCheck.FindFile">
-				<modName>Lord of the Rims - Ents</modName>
-				<file>EntWood.xml</file>
-			</li>
+
 		
 			<li Class="ModCheck.isModLoaded">
 				<modName>Lord of the Rims - Ents</modName>

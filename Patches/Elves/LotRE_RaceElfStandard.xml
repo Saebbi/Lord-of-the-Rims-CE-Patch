@@ -4,11 +4,6 @@
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
 		<operations>
-		<!--Continue if combat extended does exist-->
-			<li Class="ModCheck.FindFile">
-				<modName>Lord of the Rims - Elves</modName>
-				<file>LotRE_RaceElfStandard.xml</file>
-			</li>
 		
 			<li Class="ModCheck.isModLoaded">
 				<modName>Lord of the Rims - Elves</modName>
@@ -75,7 +70,7 @@
 							<cooldownTime>1.8</cooldownTime>
 							<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 							<armorPenetration>0.09</armorPenetration>
-							<commonality>0.2</commonality>
+							<chanceFactor>0.2</chanceFactor>
 						</li>
 					</tools>
 				</value>
@@ -168,7 +163,7 @@
 							<cooldownTime>1.8</cooldownTime>
 							<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 							<armorPenetration>0.09</armorPenetration>
-							<commonality>0.2</commonality>
+							<chanceFactor>0.2</chanceFactor>
 						</li>
 					</tools>
 				</value>

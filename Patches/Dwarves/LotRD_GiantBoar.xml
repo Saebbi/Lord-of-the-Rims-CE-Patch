@@ -4,6 +4,11 @@
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
 		<operations>
+		<!--Continue if combat extended does exist-->
+			<li Class="ModCheck.FindFile">
+				<modName>Lord of the Rims - Dwarves</modName>
+				<file>LotRD_GiantBoar.xml</file>
+			</li>
 		
 			<li Class="ModCheck.isModLoaded">
 				<modName>Lord of the Rims - Dwarves</modName>
@@ -52,7 +57,7 @@
 						<cooldownTime>3</cooldownTime>
 						<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 						<armorPenetration>0.1</armorPenetration>
-						<chanceFactor>0.2</chanceFactor>
+						<commonality>0.2</commonality>
 					  </li>
 					</tools>
 				</value>

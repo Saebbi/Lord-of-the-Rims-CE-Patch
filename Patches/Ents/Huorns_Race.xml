@@ -3,6 +3,11 @@
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
 		<operations>
+
+			<li Class="ModCheck.FindFile">
+				<modName>Lord of the Rims - Ents</modName>
+				<file>Races_Animal_Huorns.xml</file>
+			</li>
 		
 			<li Class="ModCheck.isModLoaded">
 				<modName>Lord of the Rims - Ents</modName>

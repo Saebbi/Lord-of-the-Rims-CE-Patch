@@ -4,6 +4,11 @@
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
 		<operations>
+		<!--Continue if combat extended does exist-->
+			<li Class="ModCheck.FindFile">
+				<modName>Lord of the Rims - Ents</modName>
+				<file>Weapons_Boulders.xml</file>
+			</li>
 		
 			<li Class="ModCheck.isModLoaded">
 				<modName>Lord of the Rims - Ents</modName>
@@ -13,6 +18,7 @@
 			<li Class="CombatExtended.PatchOperationMakeGunCECompatible">
 				<defName>Weapon_Boulder</defName>
 				<statBases>
+					<MarketValue>200</MarketValue>
 					<Mass>40</Mass>
 					<RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>	
 					<SightsEfficiency>1.0</SightsEfficiency>

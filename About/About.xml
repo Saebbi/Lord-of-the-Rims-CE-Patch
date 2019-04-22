@@ -3,7 +3,9 @@
 	<name>Lord of the Rims CE Patch</name>
 	<author>Saebbi</author>
 	<url></url>
-	<targetVersion>1.0.2059</targetVersion>
+	<supportedVersions>
+		<li>1.0</li>
+	</supportedVersions>
 	<description>
 	Patches the Lord of the Rims mods to work with Combat Extended. Automatically detects installed modules and makes them compatible.
 	
